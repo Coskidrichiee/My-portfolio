@@ -1,0 +1,489 @@
+/* Color variables */
+:root {
+  --white-color: #fff;
+  --bg-color: #fff;
+  --gray-color: #ccc;
+}
+
+/* Changing background color */
+body {
+  background: var(--bg-color) !important;
+}
+
+/* Changing link color */
+.nav-item .nav-link {
+  color: var(--white-color);
+}
+
+/* Hero section background image */
+.hero {
+  height: 100vh;
+  background-image: url("../images/images\ \(2\).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+/* Timeline background line */
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+#cv img {
+  width: 230px;
+}
+
+/* Contact section background image */
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../images/contact-bg.jpeg");
+}
+
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: calc(100% / 2 - 10px) !important;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100% !important;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:  #077bff; /* Header background color */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200%; /* Full width for the container */
+}
+
+header .container a{
+  text-decoration: none;
+}
+
+/* Media query for screens smaller than 992px (tablets and small devices) */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    font-size: 1.8rem; /* Adjust brand font size for smaller screens */
+  }
+
+  .navbar {
+    padding: 1rem 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Adjust the font size for navigation links */
+    margin: 0.5rem 0; /* Adjust the margin for links on smaller screens */
+  }
+
+  /* Make sure the toggler button is aligned properly */
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  /* Collapse the navigation into a vertical menu when toggled */
+  .navbar-nav {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0; /* Reduce spacing between nav items */
+  }
+}
+
+/* Media query for screens smaller than 576px (mobile devices) */
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    font-size: 1.5rem; /* Further reduce brand font size */
+  }
+
+  .navbar {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem; /* Reduce font size for smaller devices */
+  }
+}
+
+
+.float-md-start {
+  flex: 3;
+}
+
+.float-md-end {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end; /* Align the nav to the right */
+}
+
+nav.nav {
+  display: flex;
+  gap: 20px; /* Space between nav links */
+}
+
+a.nav-link {
+  color: #fff; /* Darker color for contrast */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.nav-link:hover {
+  color: #000; /* Darker hover color */
+}
+
+h2 span.badge {
+  font-size: 24px;
+  padding: 10px 15px;
+  color: #fff; /* Text color for better visibility */
+}
+
+
+.typing-effect {
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.10em solid #077bff;
+  animation: typing 15s steps(45) infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+#background {
+  position: relative;
+  background-image: url("../images/me.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#background > * {
+  position: relative;
+  color: white;
+}
+
+main.cover-container {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  margin-left: 22rem;
+  margin-right: 22rem;
+  margin-top: 5rem;
+  text-align: center;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 10px; /* Slight rounding of edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Typing effect styling for the heading */
+h1.typing-effect {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  /* letter-spacing: 2px;
+  animation: typing 3s steps(30, end), blink-caret .75s step-end infinite; */
+}
+
+/* Button styling */
+main a.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #077bff; /* Warning yellow */
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.btn:hover {
+  background-color: #077bff; /* Darker yellow on hover */
+  transform: scale(1.05); /* Slightly grow the button on hover */
+}
+
+ /* Loader CSS */
+ .loader_bg {
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: 280px;
+
+}
+
+.go-top-button {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed at the bottom-right corner */
+  bottom: 20px; /* 20px from the bottom */
+  right: 20px; /* 20px from the right */
+  background-color:#007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 30px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 20px; /* Font size */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+.go-top-button:hover {
+  background-color: #007bff; /* Darker shade on hover */
+}
+
+/* Media query for screens smaller than 992px (tablets and small devices) */
+@media (max-width: 991.98px) {
+  header h2 {
+    font-size: 1.5rem; /* Adjust header font size */
+  }
+
+  .nav-link {
+    font-size: 1rem; /* Reduce nav link font size */
+  }
+
+  #typing-text {
+    font-size: 2rem; /* Adjust main text font size */
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem; /* Adjust button padding */
+    font-size: 1rem; /* Adjust button font size */
+  }
+
+  main {
+    padding: 1.5rem; /* Add padding for better spacing on smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 768px (small tablets and larger phones) */
+@media (max-width: 767.98px) {
+  header h2 {
+    font-size: 1.3rem; /* Further reduce font size */
+  }
+
+  .nav-link {
+    font-size: 0.9rem; /* Reduce nav link font size further */
+    padding: 0.5rem; /* Adjust spacing around links */
+  }
+
+  #typing-text {
+    font-size: 1.8rem; /* Further adjust the typing effect text size */
+  }
+
+  .btn {
+    padding: 0.7rem 1.3rem; /* Reduce button padding */
+    font-size: 0.9rem; /* Adjust button text size */
+  }
+
+  main {
+    padding: 1rem; /* Further reduce main section padding */
+  }
+}
+
+/* Media query for screens smaller than 576px (mobile devices) */
+@media (max-width: 575.98px) {
+  header h2 {
+    font-size: 1rem; /* Smaller header font size for mobile */
+  }
+
+  .nav-link {
+    font-size: 0.85rem; /* Smaller nav link font size */
+  }
+
+  #typing-text {
+    font-size: 1.5rem; /* Further reduce typing effect text */
+  }
+
+  .btn {
+    padding: 0.6rem 1rem; /* Adjust button size for mobile */
+    font-size: 0.8rem; /* Smaller button font size */
+  }
+
+  main {
+    padding: 0.5rem; /* Smaller padding on mobile */
+  }
+
+  /* Center align header elements on mobile */
+  header .container {
+    text-align: center;
+  }
+
+  /* Remove float on smaller devices for better layout */
+  .float-md-start, .float-md-end {
+    float: none !important;
+  }
+}
+/* Default styles for larger screens */
+main.cover-container {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  margin-left: 22rem;
+  margin-right: 22rem;
+  margin-top: 5rem;
+  text-align: center;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 10px; /* Slight rounding of edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Media query for screens smaller than 992px (tablets) */
+@media (max-width: 991.98px) {
+  main.cover-container {
+    margin-left: 10rem;
+    margin-right: 10rem; /* Reduce side margins */
+    padding-top: 4rem;
+    padding-bottom: 2rem; /* Reduce padding */
+  }
+
+  h1.typing-effect {
+    font-size: 2rem; /* Adjust the heading size */
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem; /* Adjust button size */
+  }
+}
+
+/* Media query for screens smaller than 768px (small tablets) */
+@media (max-width: 767.98px) {
+  main.cover-container {
+    margin-left: 5rem;
+    margin-right: 5rem; /* Further reduce side margins */
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
+  h1.typing-effect {
+    font-size: 1.8rem; /* Adjust heading size for smaller screens */
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem; /* Further adjust button size */
+  }
+}
+
+/* Media query for screens smaller than 576px (mobile devices) */
+@media (max-width: 575.98px) {
+  main.cover-container {
+    margin-left: 1rem;
+    margin-right: 1rem; /* Minimize side margins on mobile */
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  h1.typing-effect {
+    font-size: 1.5rem; /* Smaller font size for heading */
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem; /* Smaller button size */
+  }
+
+  /* Center align the header for small screens */
+  header .container {
+    text-align: center;
+  }
+
+  /* Remove float for better mobile layout */
+  .float-md-start, .float-md-end {
+    float: none !important;
+  }
+
+  /* Stack navigation links vertically on mobile */
+  nav.nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.nav .nav-link {
+    margin: 0.5rem 0;
+  }
+}
+
+
+
+
+
